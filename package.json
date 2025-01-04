@@ -1,6 +1,6 @@
 {
-  "name": "react-grid-layout",
-  "version": "1.5.0",
+  "name": "react-grid-layout-19",
+  "version": "1.5.0-react19.1",
   "description": "A draggable and resizable grid layout with responsive breakpoints, for React.",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:STRML/react-grid-layout.git"
+    "url": "git@github.com:Censkh/react-grid-layout-19.git"
   },
   "keywords": [
     "react",
@@ -35,7 +35,7 @@
   "bugs": {
     "url": "https://github.com/STRML/react-grid-layout/issues"
   },
-  "homepage": "https://github.com/STRML/react-grid-layout",
+  "homepage": "https://github.com/Censkh/react-grid-layout-19",
   "dependencies": {
     "clsx": "^2.0.0",
     "fast-equals": "^4.0.3",

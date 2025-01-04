@@ -1,6 +1,5 @@
 // @flow
 import * as React from "react";
-import PropTypes from "prop-types";
 import ResizeObserver from "resize-observer-polyfill";
 import clsx from "clsx";
 import type { ReactRef } from "../ReactGridLayoutPropTypes";
@@ -45,12 +44,6 @@ export default function WidthProvideRGL<Config>(
   > {
     static defaultProps: WPDefaultProps = {
       measureBeforeMount: false
-    };
-
-    static propTypes = {
-      // If true, will not render children until mounted. Useful for getting the exact width before
-      // rendering, to prevent any unsightly resizing.
-      measureBeforeMount: PropTypes.bool
     };
 
     state: WPState = {

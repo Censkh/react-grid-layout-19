@@ -77,9 +77,6 @@ export default class ReactGridLayout extends React.Component<Props, State> {
   // TODO publish internal ReactClass displayName transform
   static displayName: ?string = "ReactGridLayout";
 
-  // Refactored to another module to make way for preval
-  static propTypes = ReactGridLayoutPropTypes;
-
   static defaultProps: DefaultProps = {
     autoSize: true,
     cols: 12,
