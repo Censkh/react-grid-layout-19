@@ -8,8 +8,8 @@ import ReactGridLayout from "../../lib/ReactGridLayout";
 import { calcGridItemPosition } from "../../lib/calculateUtils";
 import GridItem from "../../lib/GridItem";
 import ResponsiveReactGridLayout from "../../lib/ResponsiveReactGridLayout";
-import BasicLayout from "../examples/1-basic";
-import ShowcaseLayout from "../examples/0-showcase";
+import BasicLayout from "../examples/01-basic";
+import ShowcaseLayout from "../examples/00-showcase";
 import DroppableLayout from "../examples/15-drag-from-outside";
 import ResizableLayout from "../examples/20-resizable-handles";
 import deepFreeze from "../util/deepFreeze";
@@ -375,14 +375,14 @@ describe("Lifecycle tests", function () {
         expect(gridLayout.state("droppingDOMNode")).toEqual(null);
 
         // Drag the droppable over the grid layout.
-        dragDroppableTo(wrapper, 200, 150);
+        dragDroppableTo(wrapper, 200, 140);
 
         // We should have the position in our state.
         expect(gridLayout.state("droppingPosition")).toHaveProperty(
           "left",
           200
         );
-        expect(gridLayout.state("droppingPosition")).toHaveProperty("top", 150);
+        expect(gridLayout.state("droppingPosition")).toHaveProperty("top", 140);
         // We should now have the placeholder element in our state.
         expect(gridLayout.state("droppingDOMNode")).toHaveProperty(
           "type",
